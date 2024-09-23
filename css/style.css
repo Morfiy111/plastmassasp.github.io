@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../webfonts/Roboto-Regular.ttf'),
+        url('../webfonts/Roboto-Bold.ttf'),
+        url('../webfonts/Roboto-Italic.ttf');
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #5c7284;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    border-bottom: 1px solid #91D13E;
+}
+
+a,
+button {
+    transition: all .3s linear;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: #5c7284;
+}
+
+.header-adress {
+    color: #fff;
+    font-size: 22px;
+}
+
+.header-logo a:hover {
+    border-bottom-color: transparent;
+}
+
+.header-contacts-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.header-block-page {
+    background-image: url("../images/illustration0.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.header-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-page {
+    position: relative;
+}
+
+.header-logo {
+    background-color: #fff;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.header-row-top-social {
+    text-align: right;
+}
+
+.header-row-top-social a {
+    color: #fff;
+    margin-left: 5px;
+    font-size: 20px;
+}
+
+.header-block-btns .page-btn {
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.header-block-btns .page-btn:hover {
+    background-color: #fff;
+    color: #5c7284;
+}
+
+.page-btn {
+    background-color: transparent;
+    color: #00489a;
+    border: 2px solid #00489a;
+    padding: 8px 22px;
+    font-size: 20px;
+    text-align: center;
+    line-height: initial;
+}
+
+.page-btn:hover {
+    background-color: #00489a;
+    color: #fff;
+    border: 2px solid #00489a;
+}
+
+.header-phones a {
+    color: #fff;
+    display: block;
+    font-size: 22px;
+
+}
+
+.header-line-top {
+    padding-top: 15px;
+}
+
+
+.title-page {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.goods-flex-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.goods-flex-item {
+    width: 31%;
+}
+
+.goods-img img {
+    width: 100%;
+}
+
+.goods-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.goods-img {
+    margin-bottom: 20px;
+}
+
+.big-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.footer-page {
+    background-color: #5c7284;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.footer-flex-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    align-items: flex-start;
+}
+
+.footer-flex-block a {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.social-block {
+    display: flex;
+}
+
+.social-block a {
+    margin-right: 20px;
+}
+
+.footer-copyright {
+    font-size: 11px;
+    color: #fff;
+}
+
+.footer-copyright-company {
+    color: #fff;
+}
+
+.footer-copyright a {
+    color: #fff;
+}
+
+.title-page h1 {
+    text-align: center;
+}
+
+@media(max-width: 767px) {
+
+    .footer-flex-block,
+    .advantages-main,
+    .header-contacts-row {
+        flex-wrap: wrap;
+    }
+
+    .navbar-dark .navbar-toggler {
+        color: #fff;
+        border-color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .header-block-btns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .goods-flex-block {
+        flex-wrap: wrap;
+    }
+
+    .goods-flex-item {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .header-logo img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .header-logo {
+        margin-bottom: 10px;
+    }
+
+    .header-phones a {
+        white-space: nowrap;
+    }
+}
